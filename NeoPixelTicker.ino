@@ -13,11 +13,11 @@
 //--------------------------------------------
 
 
-char ssid[] = "TELUS2358";       // SSID
-char password[] = "";  // your network key
+char ssid[] = "TELUS0183";       // SSID
+char password[] = "6z5g4hbdxi";  // your network key
 
 #define PIN 9            //Neopixel Data Pin  [ESP8266 - GPIO9]
-#define NUM_LEDS 6       //Length of Neopixel Strand
+#define NUM_LEDS 16       //Length of Neopixel Strand
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -160,7 +160,7 @@ void loop() {
   unsigned long timeNow = millis();
   
   if ((timeNow > api_due_time))  {
-    printTickerData("bitcoin");
+    printTickerData("ARK");
     //printTickerData("ethereum");
    // printTickerData("dogecoin");
     api_due_time = timeNow + api_mtbs;
